@@ -13,11 +13,12 @@
 <h2>My favourite food</h2>
 <ul>
     <li th:each="food : ${favourite_food}" th:text="${food}"></li>
+    <!-- This creates a bulleted list of foods drawn from an array list -->
 </ul>
 <p>My favourite movie is <span th:text="${favourite_movie}"></span></p>
 
 <h2>Astrik + Akrah</h2>
-<img src=".../img/Astrik.png">
+<img src=".../img/Astrik.png">  <!--this is a picture of some of my characters. I use them in books and such -->
 
 </body>
 </html>

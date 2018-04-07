@@ -20,7 +20,7 @@ public class HellotemplatesApplication {
 	    model.addAttribute("favourite_food",favouriteFoods);
 	    model.addAttribute("favourite_movie","Interview With the Vampire");
 		return "index.html";
-	}
+	} //These attributes allow me to store data for later <multiple> useage(s)
 
 
 	public static void main(String[] args) {
