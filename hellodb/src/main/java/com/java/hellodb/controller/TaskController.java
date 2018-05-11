@@ -29,7 +29,7 @@ public class TaskController {
     @RequestMapping(value="/addTask", method= RequestMethod.POST) //adds new task
     public RedirectView addNewTask(Task task){
         tasks.save(task);
-        return new RedirectView("/allTask");
+        return new RedirectView("/allTasks");
     }
 
     @RequestMapping("/allTasks")
