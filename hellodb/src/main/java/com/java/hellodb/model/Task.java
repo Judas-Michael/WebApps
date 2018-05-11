@@ -1,9 +1,11 @@
 package com.java.hellodb.model;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Entity
 public class Task {
 
     @Id
@@ -27,7 +29,7 @@ public class Task {
         this.text= text;
     }
 
-    public boolean isUrgent(){ //true or false for urgent
+    public boolean getUrgent(){ //true or false for urgent
         return urgent;
     }
 
